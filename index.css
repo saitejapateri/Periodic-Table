@@ -1,5 +1,7 @@
 body{
-    background: linear-gradient(60deg, #29323c 0%, #485563 100%);
+    background-image: url(https://i.pinimg.com/736x/5a/c1/29/5ac1296b709f4427d4c7785a322d78a2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
     margin: 0;
 }
 
@@ -10,8 +12,8 @@ body{
 h1{
     background-color: #D0ECE7;
     text-shadow: 1px 1px 2px black;
-    max-width: 90%;
-    color: rgb(252, 149, 85);
+    max-width: 95%;
+    color: rgb(250, 103, 11);
     text-align: center;
     margin: auto;
     margin-top: 1%;
@@ -20,12 +22,13 @@ h1{
 
 .naming{
     margin: auto;
-    width: 90%;
+    width: 100%;
 }
 
+/* list styling */
 ul{
     margin: auto;
-    margin-top: 0.5rem;
+    margin-top: 1rem;
     width: 100%;
     list-style-type: none;
     display: flex;
@@ -34,10 +37,15 @@ ul{
 }
 
 li{
-    padding: 10px;
-    border-radius: 20px;
-    color: black;
+    color: white;
     font-weight: bolder;
+}
+
+/* bullet styling */
+.bullet{
+    width: 20px;
+    height: 20px;
+    border: 1px solid black;
 }
 
 
@@ -45,7 +53,7 @@ li{
 
 .container{
     display: grid;
-    max-width: 90%;
+    max-width: 95%;
     margin: 1% auto auto auto;
     text-align: center;
 }
@@ -83,53 +91,44 @@ li{
 /* items styling */
 
 .alkali{
-    background-color: #dbf26e;
-    background-image: linear-gradient(to right, #dbf26e 0%, #61fa74 37%, #1cfdd6 100%);    
+    background-color:#FFFF5D;
 }
 
 .nonmetal{
-    background: #ddd6f3;  
-    background: -webkit-linear-gradient(to right, #faaca8, #ddd6f3);  
-    background: linear-gradient(to right, #faaca8, #ddd6f3);     
+    background-color: #FFB8DE;   
 }
 
 .transition{
-    background-image: radial-gradient( circle 878px at 48.2% -24.3%,  rgba(253,157,218,0.95) 100.2%, rgb(237, 101, 101) 100.2% );
+    background-color: #FF8F8F;
 }
 
 .lanthanums{
-    background-image: radial-gradient( circle 763px at 18.3% 24.1%,  rgba(255,249,137,1) 7.4%, rgba(226,183,40,1) 58.3% );      
+    background-color: #39CE87;   
 }
 
 .actanums{
-    background-image: linear-gradient( 180.7deg,  rgba(0,213,255,1) 2.5%, rgba(79,255,255,1) 97.7% );       
+    background-color: #B4D7FF;
 }
 
 .post-transition{
-    background: #50C9C3;  
-    background: -webkit-linear-gradient(to right, #96DEDA, #50C9C3);  
-    background: linear-gradient(to right, #96DEDA, #50C9C3);     
+    background-color: #F1D766;
 }
 
 .metalloid{
-    background: #C9FFBF;  
-    background: -webkit-linear-gradient(to right, #FFAFBD, #C9FFBF);  
-    background: linear-gradient(to right, #FFAFBD, #C9FFBF); 
-    
+    background-color: #D5B1F2;
 }
 
 .noble{
-    background: #FBD3E9;  
-    background: -webkit-linear-gradient(to right, #d16ba1, #FBD3E9);  
-    background: linear-gradient(to right, #f670b7, #FBD3E9); 
+    background-color:#6de8ea;    
 }
 
 .alkaline{
-    background-image: radial-gradient( circle farthest-corner at 10% 20%,  rgba(249,232,51,1) 0%, rgba(250,196,59,1) 100.2% );
+    background-color: #4dccc6;
+    background-image: linear-gradient(315deg, #4dccc6 0%, #96e4df 74%);
 }
 
 .unknown{
-    background-image: radial-gradient( circle 674px at 18.3% 77%,  rgba(139,186,244,1) 3.4%, rgba(15,51,92,1) 56.6% );      
+    background-color: #D3FFCE;
 }
 
 .items{
@@ -144,11 +143,10 @@ li{
 
 .item1 p,.item2 p,.item3 p,.item4 p,.item5 p,.item6 p{
     position: absolute;
-    left: 0.3em;
+    left: 1px;
     top: -0.8em;
     font-size: smaller;
 }
-
 
 .items h6{
     position: absolute;
@@ -160,7 +158,7 @@ li{
     width: 100%;
 }
 
-.items:hover,li:hover{
+.items:hover{
     box-shadow: 1px 1px 5px black;
     font-weight: bold;
     animation-name: hovering;
@@ -170,8 +168,14 @@ li{
     z-index: 1;
 }
 
-li:hover{
-    box-shadow: 1px 1px 0px rgb(47, 62, 57), -1px -1px 0px rgb(59, 73, 68);
+.naming ul li div:hover{
+    box-shadow: 1px 1px 5px paleturquoise;
+    font-weight: bold;
+    animation-name: hovering;
+    animation-duration: 0.5s;
+    animation-timing-function: ease-out;
+    animation-fill-mode: forwards;
+    z-index: 1;
 }
 
 @keyframes hovering{
